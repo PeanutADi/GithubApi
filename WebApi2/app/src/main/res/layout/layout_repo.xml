@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/githubCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@android:color/holo_blue_light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/repoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="项目名"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/repoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="项目id"
+                android:textSize="20dp"
+                android:textColor="#FFFFF0" />
+
+            <TextView
+                android:id="@+id/repoIssue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="存在问题"
+                android:textSize="20dp"
+                android:textColor="#FFFFF0" />
+
+            <TextView
+                android:id="@+id/repoDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="项目描述"
+                android:textSize="20dp"
+                android:textColor="#FFFFF0" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
